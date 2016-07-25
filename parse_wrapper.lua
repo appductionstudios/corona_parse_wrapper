@@ -41,7 +41,7 @@ function logoutUser(callback)
         callback(event)
     end
 
-    return mod_parse:sendRequest(uri, {}, "logout", mod_parse.POST, callback)
+    return mod_parse:sendRequest(uri, {}, "logout", mod_parse.POST, cb)
 end
 
 function Parse.config:applicationId(app_id)
